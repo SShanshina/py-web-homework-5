@@ -1,0 +1,15 @@
+version: '2.6'
+
+networks:
+  flask_network:
+
+services:
+  db:
+    build: db
+    ports:
+      - '5432:5432'
+    container_name: flask_homework_db
+    networks:
+      flask_network:
+        aliases:
+            - db-main
