@@ -43,7 +43,7 @@ data = requests.post(f'{HOST}/login/',
                      })
 print(data.json(), '\n')
 
-print('>>> login user 2 wrong password')
+print('>>> login user 2 with wrong password')
 data = requests.post(f'{HOST}/login/',
                      json={
                          'user_name': 'Will Herondale',
